@@ -30,7 +30,7 @@ if (contribuicao >= 30 && sexo === 'F' && niceContribuicao >= 85) {
     console.log(`${nome}, você ainda não pode se aposentar!`)
 }
 
-//objetos e array
+// //objetos e array
 const empresa = {
     nome: 'Rocketseat',
     cor: 'Roxo',
