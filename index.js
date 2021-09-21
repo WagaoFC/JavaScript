@@ -52,3 +52,27 @@ const programador = {
     ]
 }
 console.log(`O desenvolvedor ${programador.nome} tem ${programador.idade} anos e usa a tecnologia ${programador.tecnologias[0].nome} com especialidade em ${programador.tecnologias[0].especialidade}`)
+
+//funcoes e for
+
+const users = [
+    { nome: "Carlos", tecnologias: ["HTML", "CSS"] },
+    { nome: "Jasmine", tecnologias: ["JavaScript", "CSS"] },
+    { nome: "Tuane", tecnologias: ["HTML", "Node.js"] },
+]
+
+for (i = 0; i < users.length; i++) {
+    console.log (`${users[i].nome} trabalha com ${users[i].tecnologias}`)
+}
+
+function checkUserCss(users) {
+    for (i = 0; i < users.length; i++) {
+        if (users[i].tecnologias == 'CSS') {
+            return true
+        } else {
+            return false
+        }
+    }
+}
+
+const checkUser = checkUserCss (users)
